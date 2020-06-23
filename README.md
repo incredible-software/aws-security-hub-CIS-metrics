@@ -8,5 +8,6 @@ I've packaged these up in Cloudformation and based them on the [AWS quickstart e
 * Configure Cloudtrail to send logs to a Cloudwatch log group as discussed in the Security Hub documentation
 * Create a new SNS topic to send your alerts to. Subscribe either your email or use our [cloudwatch slack notifier](https://github.com/rewindio/aws-cloudwatch-slack-notifier)
 * Create a new Cloudformation stack using the template in this repo.  You'll be prompted for the SNS Topic ARN and the name of the Cloudwatch logs group that Cloudtrail is logging to (ie. /aws/cloudtrail)
+* https://www.youtube.com/watch?v=2JnfuAA-TiU
 
 That should be it.  Note that security hub only checks for compliance with CIS standards every 12 hours so you will need to wait until the next check to make sure your new metric filters and alarms are detected correctly by Security Hub.
